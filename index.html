@@ -10,12 +10,12 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Ganti align-items ke flex-start agar konten muncul di atas */
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom right, #ffe4e1, #fadadd);
             color: #333;
-            overflow: hidden;
+            overflow-y: auto; /* Mengaktifkan scroll vertikal */
         }
 
         .container {
@@ -26,6 +26,8 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             max-width: 600px;
             animation: fadeIn 1.5s ease;
+            margin-top: 20px; /* Memberikan jarak atas */
+            margin-bottom: 20px; /* Memberikan jarak bawah */
         }
 
         .container h1 {
@@ -38,6 +40,7 @@
             font-size: 1.2rem;
             margin-bottom: 20px;
             color: #555;
+            text-align: justify; /* Agar teks lebih rapi */
         }
 
         .image {
@@ -90,15 +93,15 @@
         <p>
             selamat ulang taun, happy birthday, barkallahu fii umrik yang 😘
 
-maap baru bisa ngasih ucapan kadonya nyusul 
-Semoga dengan bertambah nya usia kamu, lebih rajin ibadahnya, selalu allah berikan kesehatan dan keselamatan dunia akhirat AAMIIN. 
-Segala do'a dan keinginan kamu bisa terkabul, terwujud dan dimudahkan dalam segala urusan AAMIIN.
-Semoga selama kamu hidup selalu di berikan keberkahan, kelancaran rezeki, dijauhkan dari perselingkuhan, nurut sama orang tua, nurut sama aku sayang sama orang, sayang sama aku AAMIIN.
+            maap baru bisa ngasih ucapan kadonya nyusul 
+            Semoga dengan bertambah nya usia kamu, lebih rajin ibadahnya, selalu allah berikan kesehatan dan keselamatan dunia akhirat AAMIIN. 
+            Segala do'a dan keinginan kamu bisa terkabul, terwujud dan dimudahkan dalam segala urusan AAMIIN.
+            Semoga selama kamu hidup selalu di berikan keberkahan, kelancaran rezeki, dijauhkan dari perselingkuhan, nurut sama orang tua, nurut sama aku sayang sama orang, sayang sama aku AAMIIN.
 
-Maaf ya aku bukan laki laki yang bisa ngasih apa yang kamu mau setiap saat.Tapi doa in aku sukses, aku janji kalo aku sukses nanti tujuan aku ngebahagiain orang tua aku, kamu  sama ngehalalin kamu pastinya dan ngasih apa yang kamu mau, mungkin itu terlalu jauh buat kamu, kepikiran sampe situ.
+            Maaf ya aku bukan laki laki yang bisa ngasih apa yang kamu mau setiap saat.Tapi doa in aku sukses, aku janji kalo aku sukses nanti tujuan aku ngebahagiain orang tua aku, kamu  sama ngehalalin kamu pastinya dan ngasih apa yang kamu mau, mungkin itu terlalu jauh buat kamu, kepikiran sampe situ.
 
-Semoga kamu bisa sabar dan bertahan sama aku, sampe aku bisa nepatin janji aku. 
-L🤍VE YOU MORE 😘😘😘
+            Semoga kamu bisa sabar dan bertahan sama aku, sampe aku bisa nepatin janji aku. 
+            L🤍VE YOU MORE 😘😘😘
         </p>
         <audio autoplay loop>
             <source src="lagu.mp3" type="audio/mp3">
