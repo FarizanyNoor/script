@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #ffe4e1, #fadadd);
+            color: #333;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            color: #ff69b4;
+            margin-bottom: 15px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .image {
+            width: 100%;
+            max-width: 300px; /* Menentukan lebar maksimum gambar */
+            height: auto; /* Menjaga proporsi gambar */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #ff85c1;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun!</h1>
+        <img src="img.jpeg" alt="Foto Ucapan" class="image">
+        <p>
+            Semoga hari istimewa ini penuh dengan kebahagiaan, cinta, dan tawa. 
+            Kamu adalah bintang terang dalam hidup kami, dan kami berharap semua impianmu menjadi kenyataan.
+        </p>
+        <audio autoplay loop>
+            <source src="lagu.mp3" type="audio/mp3">
+            Browser Anda tidak mendukung pemutar musik.
+        </audio>
+        <br>
+        <button class="button" onclick="alert('Semoga harimu menyenangkan! 🎉')">Klik untuk Kejutan</button>
+    </div>
+</body>
+</html>
